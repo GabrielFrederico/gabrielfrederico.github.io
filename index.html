@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Góes & Nicoladelli Advogados Associados | Recuperação de Crédito e Soluções Jurídicas</title>
+  <meta name="description" content="Desde 1998 sendo referência nacional em recuperação de crédito, cobrança judicial e amigável e consultoria jurídica para bancos, financeiras e grandes empresas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Lucide icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Anti-Fraud Security Notice Bar -->
+  <div class="security-alert-bar">
+    <div class="container">
+      <div class="security-alert-content">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span class="security-tag">Segurança</span>
+          <span><strong>Evite golpes:</strong> Todos os e-mails oficiais terminam em <strong>@goesnicoladelli.com.br</strong>. Sempre confira o favorecido bancário antes de pagar.</span>
+        </div>
+        <a href="#validador" style="color: #9f1239; font-weight: 700; text-decoration: underline; white-space: nowrap;">Validar Canal Oficial &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#" class="logo-wrap">
+        <img src="https://www.goesnicoladelli.com.br/assets/images/goes-logo-white.svg" alt="Góes & Nicoladelli Logotipo">
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#servicos">Soluções Corporativas</a></li>
+        <li><a href="#para-voce">Para Você</a></li>
+        <li><a href="#filiais">Nossas Filiais</a></li>
+        <li><a href="#socios">Governança</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <button class="btn-outline" onclick="openNegotiateModal()">2ª Via / Negociar</button>
+        <button class="btn-primary" onclick="openNegotiateModal()">
+          <i data-lucide="shield-check" style="width: 18px; height: 18px;"></i>
+          Quero Negociar
+        </button>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Abrir Menu">
+          <i data-lucide="menu" style="width: 24px; height: 24px;"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileNav" class="mobile-nav-drawer">
+      <div class="mobile-nav-header">
+        <img src="https://www.goesnicoladelli.com.br/assets/images/goes-logo-white.svg" alt="Góes & Nicoladelli" style="height: 32px;">
+        <button class="mobile-close-btn" onclick="toggleMobileMenu()">&times;</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#sobre" onclick="toggleMobileMenu()">Sobre Nós</a></li>
+        <li><a href="#servicos" onclick="toggleMobileMenu()">Soluções Corporativas</a></li>
+        <li><a href="#para-voce" onclick="toggleMobileMenu()">Para Você</a></li>
+        <li><a href="#filiais" onclick="toggleMobileMenu()">Nossas Filiais</a></li>
+        <li><a href="#socios" onclick="toggleMobileMenu()">Governança</a></li>
+        <li><a href="#contato" onclick="toggleMobileMenu()">Contato</a></li>
+      </ul>
+      <div style="padding: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+        <button class="btn-outline" style="width: 100%; text-align: center;" onclick="toggleMobileMenu(); openNegotiateModal();">2ª Via / Negociar</button>
+        <button class="btn-primary" style="width: 100%; justify-content: center;" onclick="toggleMobileMenu(); openNegotiateModal();">Quero Negociar</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge-pill">
+          <i data-lucide="award" style="width: 16px; height: 16px;"></i>
+          Mais de 25 Anos de Tradição e Eficácia
+        </div>
+        <h1>
+          Acreditar na parceria é <span class="highlight">alcançar o sucesso</span>.
+        </h1>
+        <p class="hero-subtitle">
+          Especialistas em recuperação de crédito estratégica, esteira jurídica de alta performance e gestão ativa de carteiras para as principais instituições financeiras e empresas do país.
+        </p>
+
+        <div class="hero-ctas">
+          <button class="btn-primary" style="padding: 0.9rem 1.8rem; font-size: 1rem;" onclick="openNegotiateModal()">
+            <i data-lucide="message-square" style="width: 20px; height: 20px;"></i>
+            Quero Negociar meu Acordo
+          </button>
+          <a href="#servicos" class="btn-outline" style="padding: 0.9rem 1.8rem; font-size: 1rem; display: inline-flex; align-items: center; gap: 8px;">
+            <i data-lucide="building-2" style="width: 18px; height: 18px;"></i>
+            Soluções para sua Empresa
+          </a>
+        </div>
+
+        <div class="hero-trust-bar">
+          <div class="trust-item">
+            <strong>25+</strong>
+            <span>Anos de Atuação</span>
+          </div>
+          <div class="trust-item">
+            <strong>28+</strong>
+            <span>Filiais no Brasil</span>
+          </div>
+          <div class="trust-item">
+            <strong>1.000+</strong>
+            <span>Profissionais Ativos</span>
+          </div>
+          <div class="trust-item">
+            <strong>91.4%</strong>
+            <span>Índice de Solução</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Action Card -->
+      <div class="hero-card">
+        <h3>Autoatendimento Imediato</h3>
+        <p>Acesse os canais seguros para regularização de pendências e suporte corporativo.</p>
+
+        <div class="fast-options">
+          <a href="https://wa.me/554834612300" target="_blank" class="fast-btn">
+            <div class="btn-info">
+              <div class="icon-box"><i data-lucide="message-circle" style="color: #22c55e;"></i></div>
+              <div>
+                <div>WhatsApp Oficial</div>
+                <small style="color: #94a3b8; font-weight: 400;">(48) 3461-2300</small>
+              </div>
+            </div>
+            <i data-lucide="chevron-right" style="width: 18px; height: 18px; color: #94a3b8;"></i>
+          </a>
+
+          <a href="tel:08007102300" class="fast-btn">
+            <div class="btn-info">
+              <div class="icon-box"><i data-lucide="phone-call" style="color: #38bdf8;"></i></div>
+              <div>
+                <div>Central Telefônica Gratuita</div>
+                <small style="color: #94a3b8; font-weight: 400;">0800 710 2300</small>
+              </div>
+            </div>
+            <i data-lucide="chevron-right" style="width: 18px; height: 18px; color: #94a3b8;"></i>
+          </a>
+
+          <a href="mailto:negociador@goesnicoladelli.com.br" class="fast-btn">
+            <div class="btn-info">
+              <div class="icon-box"><i data-lucide="mail" style="color: #f59e0b;"></i></div>
+              <div>
+                <div>E-mail de Negociação</div>
+                <small style="color: #94a3b8; font-weight: 400;">negociador@goesnicoladelli.com.br</small>
+              </div>
+            </div>
+            <i data-lucide="chevron-right" style="width: 18px; height: 18px; color: #94a3b8;"></i>
+          </a>
+
+          <a href="https://platform.senior.com.br/hcmrs/hcm/curriculo/?tenant=goesnicoladellicombr&tenantdomain=goesnicoladelli.com.br#!/vacancies/list" target="_blank" class="fast-btn">
+            <div class="btn-info">
+              <div class="icon-box"><i data-lucide="briefcase" style="color: #ec4899;"></i></div>
+              <div>
+                <div>Trabalhe Conosco</div>
+                <small style="color: #94a3b8; font-weight: 400;">Confira nossas vagas abertas</small>
+              </div>
+            </div>
+            <i data-lucide="chevron-right" style="width: 18px; height: 18px; color: #94a3b8;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Anti-Fraud / Channel Validator -->
+  <section id="validador" class="validator-section">
+    <div class="container">
+      <div class="validator-box">
+        <div>
+          <div style="display: inline-flex; align-items: center; gap: 8px; color: var(--gold); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.5rem;">
+            <i data-lucide="shield-alert" style="width: 18px; height: 18px;"></i> Segurança e Verificação
+          </div>
+          <h2 style="font-size: 2rem; font-weight: 800; line-height: 1.25; margin-bottom: 1rem;">
+            Recebeu um contato ou boleto? <br>Verifique a autenticidade agora.
+          </h2>
+          <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6;">
+            Proteja-se contra fraudes. Digite abaixo o número de telefone, WhatsApp ou e-mail que entrou em contato com você para checar se ele pertence ao cadastro oficial da Góes & Nicoladelli.
+          </p>
+        </div>
+
+        <div class="validator-form">
+          <label style="font-size: 0.875rem; font-weight: 600; color: #cbd5e1;">Digite o Telefone ou E-mail:</label>
+          <div class="input-group">
+            <input type="text" id="contactInput" placeholder="Ex: (48) 3461-2300 ou 0800 710 2300">
+            <button id="validateBtn" class="btn-primary" style="white-space: nowrap;">
+              <i data-lucide="search" style="width: 18px; height: 18px;"></i>
+              Validar
+            </button>
+          </div>
+          <div id="validatorResult" class="validator-result"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dual Audience Focus: Para Consumidor vs Para Empresas -->
+  <section id="para-voce" style="padding: 5rem 0;">
+    <div class="container">
+      <div class="section-title">
+        <h2>Atendimento Direcionado</h2>
+        <p>Soluções desenhadas especificamente para clientes buscando negociação e instituições em busca de alta performance na recuperação de ativos.</p>
+      </div>
+
+      <div class="dual-cards">
+        <!-- Card 1: Consumidor -->
+        <div class="target-card">
+          <span class="card-badge badge-red">Para Você (Pessoa Física / Jurídica)</span>
+          <h3 style="font-size: 1.6rem; font-weight: 800; color: var(--primary); margin-bottom: 0.75rem;">
+            Deseja regularizar sua dívida com condições exclusivas?
+          </h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Facilitamos sua negociação com planos flexíveis, descontos nos juros e atendimento humanizado para você recuperar sua tranquilidade financeira.
+          </p>
+
+          <ul class="feature-list">
+            <li><i data-lucide="check-circle-2"></i> Emissão instantânea de 2ª via de boleto verificado</li>
+            <li><i data-lucide="check-circle-2"></i> Possibilidade de parcelamento sob medida para o seu orçamento</li>
+            <li><i data-lucide="check-circle-2"></i> Baixa rápida das restrições nos órgãos de proteção ao crédito</li>
+            <li><i data-lucide="check-circle-2"></i> Atendimento ágil e seguro direto via WhatsApp oficial</li>
+          </ul>
+
+          <button class="btn-primary" style="width: 100%; justify-content: center;" onclick="openNegotiateModal()">
+            Iniciar Minha Negociação com Desconto
+          </button>
+        </div>
+
+        <!-- Card 2: B2B Corporativo -->
+        <div class="target-card b2b">
+          <span class="card-badge badge-blue">Para Bancos & Grandes Empresas</span>
+          <h3 style="font-size: 1.6rem; font-weight: 800; color: var(--primary); margin-bottom: 0.75rem;">
+            Maximização de recuperação de crédito com governança rigorosa
+          </h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Estrutura industrializada de cobrança amigável e judicial aliada à inteligência de dados, esteira digital em massa e conformidade total com a LGPD.
+          </p>
+
+          <ul class="feature-list">
+            <li><i data-lucide="check-circle-2"></i> Redução drástica de PDD e encurtamento do tempo de ciclo de cobrança</li>
+            <li><i data-lucide="check-circle-2"></i> Esteira Jurídica Ativa: Busca e Apreensão, Execuções e Reintegração</li>
+            <li><i data-lucide="check-circle-2"></i> Defesa no Jurídico Passivo (mitigação de riscos em ações revisionais)</li>
+            <li><i data-lucide="check-circle-2"></i> Relatórios gerenciais e dashboards de performance em tempo real</li>
+          </ul>
+
+          <a href="#contato" class="btn-primary" style="background: #2563eb; width: 100%; justify-content: center; box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);">
+            Falar com a Diretoria Comercial B2B
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions & Services -->
+  <section id="servicos" class="services-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Expertise e Áreas de Atuação</h2>
+        <p>Capacidade instalada para suportar operações de grande volume em todas as instâncias judiciais e extrajudiciais do país.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i data-lucide="wallet-cards"></i></div>
+          <h3>Recuperação de Crédito</h3>
+          <p>Cobrança amigável com estratégias omnichannel e equipes especializadas, garantindo taxas superiores de conversão sem comprometer o relacionamento da sua marca.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i data-lucide="scale"></i></div>
+          <h3>Jurídico Ativo</h3>
+          <p>Atuação massiva onde o cliente é Autor: Ações de Busca e Apreensão de veículos e maquinários, Reintegração de Posse e Execuções de Títulos com esteira integrada.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i data-lucide="shield"></i></div>
+          <h3>Jurídico Passivo</h3>
+          <p>Defesas especializadas em ações de Revisão de Contrato, Ações Indenizatórias e Consignatórias, atuando estrategicamente para mitigar contingências e perdas financeiras.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i data-lucide="network"></i></div>
+          <h3>Advocacia de Apoio Nacional</h3>
+          <p>Execução direta e célere de diligências, audiências e cumprimento de mandados em qualquer comarca do Brasil através de nossas filiais próprias.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i data-lucide="database"></i></div>
+          <h3>Inteligência de Dados & BI</h3>
+          <p>Higienização de cadastros, enriquecimento de bases, score de recuperabilidade e automação de fluxos para máxima assertividade no contato.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i data-lucide="lock"></i></div>
+          <h3>Compliance & LGPD</h3>
+          <p>Estrutura certificada de segurança da informação, portal dedicado de privacidade e aderência integral às diretrizes dos principais órgãos reguladores.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Presence / Filiais -->
+  <section id="filiais" class="branches-section">
+    <div class="container" style="text-align: center;">
+      <div class="section-title">
+        <h2>Presença Nacional Integral</h2>
+        <p>Estrutura física e operacional com filiais instaladas nos principais centros econômicos e capitais de todo o Brasil.</p>
+      </div>
+
+      <div class="branches-chip-grid">
+        <span class="branch-chip">São Paulo - SP</span>
+        <span class="branch-chip">Rio de Janeiro - RJ</span>
+        <span class="branch-chip">Belo Horizonte - MG</span>
+        <span class="branch-chip">Curitiba - PR</span>
+        <span class="branch-chip">Florianópolis - SC</span>
+        <span class="branch-chip">Porto Alegre - RS</span>
+        <span class="branch-chip">Brasília - DF</span>
+        <span class="branch-chip">Cuiabá - MT</span>
+        <span class="branch-chip">Campo Grande - MS</span>
+        <span class="branch-chip">Goiânia - GO</span>
+        <span class="branch-chip">Vitória - ES</span>
+        <span class="branch-chip">Salvador - BA</span>
+        <span class="branch-chip">Fortaleza - CE</span>
+        <span class="branch-chip">Manaus - AM</span>
+        <span class="branch-chip">Joinville - SC</span>
+        <span class="branch-chip">Dourados - MS</span>
+        <span class="branch-chip">Cascavel - PR</span>
+        <span class="branch-chip">Maringá - PR</span>
+        <span class="branch-chip">Recife - PE</span>
+        <span class="branch-chip">Palmas - TO</span>
+        <span class="branch-chip">São Luís - MA</span>
+        <span class="branch-chip">Belém - PA</span>
+        <span class="branch-chip">Aracaju - SE</span>
+        <span class="branch-chip">Rio Branco - AC</span>
+        <span class="branch-chip">Porto Velho - RO</span>
+        <span class="branch-chip">Maceió - AL</span>
+        <span class="branch-chip">Teresina - PI</span>
+        <span class="branch-chip">Natal - RN</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners & Leadership -->
+  <section id="socios" class="partners-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Corpo Jurídico e Sócios Fundadores</h2>
+        <p>Liderança experiente com sólida trajetória no Direito Bancário, Processo Civil e Gestão Empresarial.</p>
+      </div>
+
+      <div class="partners-grid">
+        <!-- Partner 1 -->
+        <div class="partner-card">
+          <div class="partner-img-wrap">
+            <img src="https://www.goesnicoladelli.com.br/assets/images/Partners/Gustavo-Rodrigo.png" alt="Gustavo Rodrigo Góes Nicoladelli" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&auto=format&fit=crop&q=80'">
+          </div>
+          <div class="partner-content">
+            <h4>Gustavo Rodrigo Góes Nicoladelli</h4>
+            <div class="role">Sócio-Administrador</div>
+            <p>Formado em Direito pela UNISINOS (RS), Pós-Graduado em Direito Processual Civil. Fundador e sócio com larga experiência na coordenação de grandes carteiras judiciais e financeiras.</p>
+          </div>
+        </div>
+
+        <!-- Partner 2 -->
+        <div class="partner-card">
+          <div class="partner-img-wrap">
+            <img src="https://www.goesnicoladelli.com.br/assets/images/Partners/Elisiane-de-Dornelles.png" alt="Elisiane Dorneles de Dornelles" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&auto=format&fit=crop&q=80'">
+          </div>
+          <div class="partner-content">
+            <h4>Elisiane Dorneles de Dornelles</h4>
+            <div class="role">Sócia</div>
+            <p>Formada em Direito pela UNISINOS, pós-graduada em Processo Civil pelo Damásio Educacional e Conselheira da OAB/SC Subseção Criciúma.</p>
+          </div>
+        </div>
+
+        <!-- Partner 3 -->
+        <div class="partner-card">
+          <div class="partner-img-wrap">
+            <img src="https://www.goesnicoladelli.com.br/assets/images/Partners/Rodrigo-Frassetto.png" alt="Rodrigo Frassetto Góes" onerror="this.src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&auto=format&fit=crop&q=80'">
+          </div>
+          <div class="partner-content">
+            <h4>Rodrigo Frassetto Góes</h4>
+            <div class="role">Sócio-Administrador</div>
+            <p>Formado em Direito pela UNESC, Especialista em Direito Bancário (FGV), MBA em Gestão Empresarial (FGV), Negócios Internacionais (ISCTE Lisboa) e Mestrando em Gestão pela ISCTE Business School.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & B2B Form -->
+  <section id="contato" class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <div>
+            <span style="color: var(--accent); font-weight: 700; text-transform: uppercase; font-size: 0.85rem;">Canais de Atendimento</span>
+            <h2 style="font-size: 2.2rem; font-weight: 800; color: var(--primary); margin-top: 0.25rem;">
+              Entre em contato conosco
+            </h2>
+            <p style="color: var(--text-muted); margin-top: 0.75rem;">
+              Nossa equipe está à disposição para atendimento a clientes, parcerias corporativas e esclarecimento de dúvidas.
+            </p>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+            <div>
+              <strong style="color: var(--primary); display: block;">Sede Matriz</strong>
+              <span style="color: var(--text-muted); font-size: 0.95rem;">Rua Almirante Tamandaré, 114 - Santa Bárbara<br>Criciúma / SC - CEP: 88.804-290</span>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-icon"><i data-lucide="phone"></i></div>
+            <div>
+              <strong style="color: var(--primary); display: block;">Telefones Oficiais</strong>
+              <span style="color: var(--text-muted); font-size: 0.95rem;">0800 710 2300 (Ligação Gratuita)<br>+55 (48) 3461-2300 (Fixo e WhatsApp)</span>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-icon"><i data-lucide="mail"></i></div>
+            <div>
+              <strong style="color: var(--primary); display: block;">E-mails de Contato</strong>
+              <span style="color: var(--text-muted); font-size: 0.95rem;">negociador@goesnicoladelli.com.br<br>goesnicoladelli@goesnicoladelli.com.br</span>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-icon"><i data-lucide="clock"></i></div>
+            <div>
+              <strong style="color: var(--primary); display: block;">Horário de Funcionamento</strong>
+              <span style="color: var(--text-muted); font-size: 0.95rem;">Segunda a Sexta-feira: 08:00 às 18:00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- B2B Form -->
+        <div class="b2b-form-card">
+          <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem;">Solicite uma Proposta Corporativa</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Preencha o formulário para atendimento corporativo a bancos e credores.</p>
+
+          <form onsubmit="handleB2BSubmit(event)">
+            <div class="form-group">
+              <label>Nome Completo *</label>
+              <input type="text" required placeholder="Seu nome">
+            </div>
+
+            <div class="form-group">
+              <label>Empresa ou Instituição *</label>
+              <input type="text" required placeholder="Nome da empresa">
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label>E-mail Corporativo *</label>
+                <input type="email" required placeholder="seu@email.com">
+              </div>
+              <div class="form-group">
+                <label>Telefone / WhatsApp *</label>
+                <input type="tel" required placeholder="(00) 00000-0000">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Serviço de Interesse</label>
+              <select>
+                <option>Recuperação de Crédito (Amigável)</option>
+                <option>Jurídico Ativo (Busca e Apreensão / Execução)</option>
+                <option>Jurídico Passivo (Defesa de Carteiras)</option>
+                <option>Advocacia de Apoio e Diligências</option>
+                <option>Outros assuntos corporativos</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Mensagem</label>
+              <textarea rows="3" placeholder="Como podemos ajudar sua instituição?"></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; padding: 0.9rem;">
+              Enviar Solicitação de Contato
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="https://www.goesnicoladelli.com.br/assets/images/goes-logo-white.svg" alt="Góes & Nicoladelli" style="height: 34px; margin-bottom: 1.25rem;">
+          <p style="font-size: 0.875rem; line-height: 1.6; max-width: 320px;">
+            Fundada em 1998, a Góes & Nicoladelli Advogados Associados é um dos maiores escritórios do Brasil especializados na concessão, gestão e recuperação de ativos com segurança e tecnologia.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navegação</h5>
+          <ul class="footer-links">
+            <li><a href="#sobre">Quem Somos</a></li>
+            <li><a href="#servicos">Nossos Serviços</a></li>
+            <li><a href="#filiais">Filiais no Brasil</a></li>
+            <li><a href="#socios">Sócios e Liderança</a></li>
+            <li><a href="https://platform.senior.com.br/hcmrs/hcm/curriculo/?tenant=goesnicoladellicombr&tenantdomain=goesnicoladelli.com.br#!/vacancies/list" target="_blank">Trabalhe Conosco</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Autoatendimento</h5>
+          <ul class="footer-links">
+            <li><a href="javascript:void(0)" onclick="openNegotiateModal()">Quero Negociar</a></li>
+            <li><a href="javascript:void(0)" onclick="openNegotiateModal()">2ª Via de Boleto</a></li>
+            <li><a href="#validador">Validar Contato / Telefone</a></li>
+            <li><a href="tel:08007102300">Ligar 0800 710 2300</a></li>
+            <li><a href="https://wa.me/554834612300" target="_blank">WhatsApp (48) 3461-2300</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Privacidade & LGPD</h5>
+          <ul class="footer-links">
+            <li><a href="https://portalprivacidade.goesnicoladelli.net" target="_blank">Portal de Privacidade</a></li>
+            <li><a href="#">Aviso de Cookies</a></li>
+            <li><a href="#">Canal DPO / Encarregado</a></li>
+            <li><a href="https://www.reclameaqui.com.br/empresa/goes-e-nicoladelli-advogados-associados/" target="_blank">Reputação Reclame Aqui (Ótimo)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 1998 - 2026 Góes & Nicoladelli Advogados Associados. CNPJ: 03.239.823/0001-62. Todos os direitos reservados.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <span>Criciúma / SC</span>
+          <span>Atuação em todo o Brasil</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Quero Negociar -->
+  <div id="negotiateModal" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeNegotiateModal()">&times;</button>
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.5rem;">
+        <i data-lucide="shield-check" style="color: var(--accent); width: 24px; height: 24px;"></i>
+        <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--primary);">Quero Negociar Débito</h3>
+      </div>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">
+        Escolha o canal oficial para verificar seus acordos, obter descontos ou solicitar a 2ª via do seu boleto:
+      </p>
+
+      <div class="fast-options">
+        <a href="https://wa.me/554834612300?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20as%20condi%C3%A7%C3%B5es%20para%20negocia%C3%A7%C3%A3o%20do%20meu%20acordo." target="_blank" class="fast-btn" style="background: #f0fdf4; border-color: #bbf7d0; color: #166534;">
+          <div class="btn-info">
+            <div class="icon-box" style="background: #22c55e; color: #fff;"><i data-lucide="message-circle"></i></div>
+            <div>
+              <div style="color: #166534; font-weight: 700;">Negociação via WhatsApp</div>
+              <small style="color: #15803d;">Atendimento rápido pelo (48) 3461-2300</small>
+            </div>
+          </div>
+          <i data-lucide="external-link" style="width: 18px; height: 18px; color: #166534;"></i>
+        </a>
+
+        <a href="tel:08007102300" class="fast-btn" style="background: #f0f9ff; border-color: #bae6fd; color: #0369a1;">
+          <div class="btn-info">
+            <div class="icon-box" style="background: #0284c7; color: #fff;"><i data-lucide="phone"></i></div>
+            <div>
+              <div style="color: #0369a1; font-weight: 700;">Central 0800 710 2300</div>
+              <small style="color: #0284c7;">Ligação gratuita para todo o Brasil</small>
+            </div>
+          </div>
+          <i data-lucide="arrow-right" style="width: 18px; height: 18px; color: #0369a1;"></i>
+        </a>
+
+        <a href="mailto:negociador@goesnicoladelli.com.br" class="fast-btn" style="background: #fffbeb; border-color: #fde68a; color: #92400e;">
+          <div class="btn-info">
+            <div class="icon-box" style="background: #d97706; color: #fff;"><i data-lucide="mail"></i></div>
+            <div>
+              <div style="color: #92400e; font-weight: 700;">E-mail do Negociador</div>
+              <small style="color: #b45309;">negociador@goesnicoladelli.com.br</small>
+            </div>
+          </div>
+          <i data-lucide="arrow-right" style="width: 18px; height: 18px; color: #92400e;"></i>
+        </a>
+      </div>
+
+      <div style="margin-top: 1.5rem; padding: 0.85rem; background: #fff1f2; border: 1px solid #fecdd3; border-radius: 10px; font-size: 0.8rem; color: #9f1239;">
+        <strong>Lembrete de Segurança:</strong> Ao efetuar pagamentos via boleto ou PIX, certifique-se sempre de que o favorecido corresponde exatamente ao seu Banco ou Credor.
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floating Action -->
+  <a href="https://wa.me/554834612300?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20atendente." target="_blank" class="floating-wa" title="Fale conosco no WhatsApp">
+    <i data-lucide="message-circle" style="width: 22px; height: 22px;"></i>
+    <span>Falar no WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
